@@ -1,18 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #235789;
-  color: white;
+  max-height: 85px;
+  background-color: #F2AF29;
+  color: #000000;
 }
 
 body {
-  background-color: #FDFFFC;
+  background-color: #000000;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .logo img{
-  max-width: 100px;
+  max-width: 250px;
 }
 
 .nav-links ul {
@@ -31,12 +39,14 @@ body {
 }
 
 .nav-links ul li a {
-  color: white;
+  font-family: 'Anta', sans-serif;
+  color: #000000;
   text-decoration: none;
 }
 
 .nav-links ul li a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .search {
@@ -52,14 +62,58 @@ body {
 .search button {
   padding: 8px 12px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #AD343E;
+  font-family: 'Anta', sans-serif;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .search button:hover {
-  background-color: #45a049;
+  background-color: #7f1c24;
+}
+
+/* Appointment Form */
+.form {
+  font-family: 'Anta', sans-serif;
+  color: white;
+  width: 500px;
+  margin: 0 auto;
+  margin-left: 100px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.name, .email, .make, .model, .year, .interests, .parts{
+  margin-bottom: 10px;
+}
+
+.form input {
+  font-family: 'Anta', sans-serif;
+  border: 2px solid #F2AF29;
+  background-color: #9f9f9f;
+  border-radius: 5px;
+  /* width: 350px; */
+}
+
+.name input {
+  width: 300px;
+}
+
+.form input:focus {
+  border: none;
+}
+
+.form input::placeholder{
+  font-family: 'Anta', sans-serif;
+  color: black;
+}
+
+.form select {
+  border: 2px solid #F2AF29;
+  background-color: #9f9f9f;
 }
 
 
