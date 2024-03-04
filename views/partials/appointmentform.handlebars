@@ -1,5 +1,8 @@
 <div class="form">
     <h2 class="underline">SCHEDULE AN APPOINTMENT</h2>
+    <p>
+        Simply fill out the information below with the services you are interested in! Our team will contact you with a quote and available time slot.
+    </p>
     <form>
         <div class="name">
             <label for="name">Name</label>
@@ -56,15 +59,18 @@
             <label for="interests">What Are You Looking To Get Done?</label>
             <input type="text" name="interests" id="interests" placeholder="Ex: Exhaust Install">
         </div>
-        <div class="parts">
+       <div class="parts">
             <div>
-                <label for="parts">Are You Bringing Your Own Parts?</label>
-                <input type="radio" name="Parts" id="yes" value="Yes">
+                <label for="yes">Are You Bringing Your Own Parts?</label>
+                <input type="radio" name="parts" id="yes" value="Yes">
                 <label for="yes">Yes</label>
                 <input type="radio" name="parts" id="no" value="No">
                 <label for="no">No</label>
             </div>
-        </div> 
+        </div>
         <button type="submit">SUBMIT FORM</button>
     </form>
+    {{!-- <div id="thankYouMessage" style="display: none;">
+        Thank you for filling out the form! Our team will contact you soon.
+    </div> --}}
 </div>

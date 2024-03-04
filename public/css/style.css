@@ -1,85 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  max-height: 85px;
-  background-color: #F2AF29;
-  color: #000000;
+:root {
+  --left-bg-color: rgba(173, 52, 62, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgb(87,84,236,1);
+  --right-btn-hover-color: rgba(28,122,28,1);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
 }
 
+/* Overall Webstie Body */
 body {
   background-color: #000000;
-}
-
-.logo {
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
-.logo img{
-  max-width: 250px;
-}
-
-.nav-links ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.nav-links ul li {
-  margin-right: 20px;
-}
-
-.nav-links ul li:last-child {
-  margin-right: 0;
-}
-
-.nav-links ul li a {
   font-family: 'Anta', sans-serif;
-  color: #000000;
-  text-decoration: none;
-}
-
-.nav-links ul li a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.search {
-  display: flex; /* Use flexbox for search container */
-}
-
-.search input[type="text"] {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.search button {
-  padding: 8px 12px;
-  border: none;
-  background-color: #AD343E;
-  font-family: 'Anta', sans-serif;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.search button:hover {
-  background-color: #7f1c24;
 }
 
 /* Appointment Form */
 .form {
   font-family: 'Anta', sans-serif;
   color: white;
-  width: 500px;
+  width: 800px;
   margin: 0 auto;
   margin-left: 100px;
+  margin-top: 125px;
+}
+
+.form p {
+  font-size: 12px;
+  white-space: nowrap; 
+  overflow: hidden; 
 }
 
 .underline {
@@ -112,8 +62,11 @@ body {
 }
 
 .form select {
+  font-family: 'Anta', sans-serif; /* Ensure dropdowns use the same font */
   border: 2px solid #F2AF29;
   background-color: #9f9f9f;
+  color: black; /* Adjust text color as needed */
+  border-radius: 5px;
 }
 
 
