@@ -1,0 +1,20 @@
+.table-hours {
+    font-family: 'Anta', sans-serif;
+    color: #fff;
+    border: 2px solid #F2AF29;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-hours caption {
+    font-weight: bold;
+    font-size: 50px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+

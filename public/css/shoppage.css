@@ -1,4 +1,14 @@
 /* Shop Page */
+:root {
+    --left-bg-color: rgba(173, 52, 62, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --left-btn-hover-color: rgba(272, 175, 41, 1);
+    --right-btn-hover-color: rgba(173,52,62,1);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+  }
+
 h1 {
     font-size: 3.5rem;
     color: #fff;
@@ -106,3 +116,79 @@ h1 {
   .hover-right .left {
     width: var(--other-width);
   }
+
+.style-inventory {
+    width: 50%;
+    margin: 0;
+    height: 100%;
+    margin-top: 108px;
+}
+
+.style-inventory-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 2px solid #AD343E;
+    border-radius: 15px;
+}
+
+.style-inventory-card img {
+    position: absolute;
+    display: block;
+    height: auto;
+    width: 90%;
+}
+
+.style-inventory-card h2 {
+    margin-bottom: 400px;
+}
+
+.style-inventory-card-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 2px solid #AD343E;
+    border-radius: 15px;
+}
+
+.style-inventory-card-two img {
+    position: absolute;
+    display: none;
+    height: auto;
+    width: auto;
+}
+
+.style-inventory-card-two h2 {
+    margin-bottom: 400px;
+}
+
+.style-inventory-card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 2px solid #AD343E;
+    border-radius: 15px;
+}
+
+.style-inventory-card3 img {
+    position: absolute;
+    display: block;
+    height: 60%;
+    width: 90%;
+}
+
+.style-inventory-card3 h2 {
+    margin-bottom: 400px;
+}

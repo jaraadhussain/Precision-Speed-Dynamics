@@ -1,19 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 
-:root {
-  --left-bg-color: rgba(173, 52, 62, 0.7);
-  --right-bg-color: rgba(43, 43, 43, 0.8);
-  --left-btn-hover-color: rgb(87,84,236,1);
-  --right-btn-hover-color: rgba(28,122,28,1);
-  --hover-width: 75%;
-  --other-width: 25%;
-  --speed: 1000ms;
-}
 
 /* Overall Webstie Body */
 body {
   background-color: #000000;
   font-family: 'Anta', sans-serif;
+  color: white;
 }
 
 /* Appointment Form */
@@ -22,8 +14,8 @@ body {
   color: white;
   width: 800px;
   margin: 0 auto;
-  margin-left: 100px;
-  margin-top: 125px;
+  margin-left: 405px;
+  margin-top: 140px;
 }
 
 .form p {
@@ -36,8 +28,8 @@ body {
   text-decoration: underline;
 }
 
-.name, .email, .make, .model, .year, .interests, .parts{
-  margin-bottom: 10px;
+.form p, .underline, .name, .email, .make, .model, .year, .interests, .parts{
+  margin-bottom: 20px;
 }
 
 .form input {
@@ -48,7 +40,8 @@ body {
   /* width: 350px; */
 }
 
-.name input {
+.name input, .email input, .model input, .interests input {
+  height: 30px;
   width: 300px;
 }
 
@@ -68,6 +61,41 @@ body {
   color: black; /* Adjust text color as needed */
   border-radius: 5px;
 }
+
+.apptFormSubmit {
+  padding: 8px 12px;
+  border: none;
+  background-color: #AD343E;
+  font-family: 'Anta', sans-serif;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apptFormSubmit:hover {
+  background-color: #7f1c24;
+}
+
+.customLine {
+  border: none; /* Removes the default border */
+  height: 2px; /* Sets the thickness of the line */
+  width: 50vw;
+  background-color: rgba(250, 250, 250, 0.5); /* Black color with 50% transparency */
+  margin: 35px 0; /* Adds some space above and below the line */
+}
+
+.customLine2 {
+  border: none; /* Removes the default border */
+  height: 2px; /* Sets the thickness of the line */
+  width: 50vw;
+  background-color: rgba(250, 250, 250, 0.5); /* Black color with 50% transparency */
+  margin: 35px 0; /* Adds some space above and below the line */
+}
+
+/* .footerAppt {
+  color: #F2AF29;
+} */
+
 
 
 
