@@ -9,6 +9,14 @@ Handlebars.registerHelper("json", function(context) {
     return JSON.stringify(context);
 });
 
+Handlebars.registerHelper('if_eq', function(a, b, opts) {
+    if (a == b) {
+        return opts.fn(this);
+    } else {
+        return opts.inverse(this);
+    }
+});
+
 app.use(express.static("public"))
 
 app.engine("handlebars", engine({
@@ -31,14 +39,22 @@ app.get("/shop", (req, res) => {
     res.render("shop", {inventory: inventory}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
 });
 
-console.log(inventory)
-
 app.get("/styleparts", (req, res) => {
     res.render("styleparts", {inventory: inventory}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
 });
 
+app.get("/stylepartitems", (req, res) => {
+    const category = req.query.category
+    res.render("stylepartitems", {inventory: inventory.car_inventory.styling_parts.items, category:category}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+});
+
 app.get("/performanceparts", (req, res) => {
     res.render("performanceparts", {inventory: inventory}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+});
+
+app.get("/performancepartitems", (req, res) => {
+    const category = req.query.category
+    res.render("performancepartitems", {inventory: inventory.car_inventory.performance_parts.items, category:category}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
 });
 
 app.get("/gallery", (req, res) => {
@@ -47,6 +63,10 @@ app.get("/gallery", (req, res) => {
 
 app.get("/contact", (req, res) => {
     res.render("contact"); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+});
+
+app.get("/login", (req, res) => {
+    res.render("login"); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
 });
 
 app.listen(8080, () => {

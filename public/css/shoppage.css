@@ -117,11 +117,15 @@ h1 {
     width: var(--other-width);
   }
 
+/* INVENTORY JSON */
 .style-inventory {
     width: 50%;
     margin: 0;
     height: 100%;
     margin-top: 108px;
+    display: grid;
+    grid-template-columns: repeat(3, 470px);
+    gap: 7px;
 }
 
 .style-inventory-card {
@@ -130,8 +134,8 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 470px;
+    width: 470px;
     border: 2px solid #AD343E;
     border-radius: 15px;
 }
@@ -153,42 +157,181 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 470px;
+    width: 470px;
     border: 2px solid #AD343E;
     border-radius: 15px;
 }
 
 .style-inventory-card-two img {
     position: absolute;
-    display: none;
-    height: auto;
-    width: auto;
+    display: block;
+    height: 350px;
+    width: 350px;
 }
 
 .style-inventory-card-two h2 {
     margin-bottom: 400px;
 }
 
-.style-inventory-card3 {
+.style-inventory-card-three {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 470px;
+    width: 470px;
     border: 2px solid #AD343E;
     border-radius: 15px;
 }
 
-.style-inventory-card3 img {
+.style-inventory-card-three img {
     position: absolute;
     display: block;
-    height: 60%;
-    width: 90%;
+    height: auto;
+    width: 350px;
 }
 
-.style-inventory-card3 h2 {
+.style-inventory-card-three h2 {
     margin-bottom: 400px;
 }
+
+.performance-inventory {
+  width: 50%;
+  margin: 0;
+  height: 100%;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 470px);
+  gap: 7px;
+}
+
+.performance-inventory-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 470px;
+  width: 470px;
+  border: 2px solid #F2AF29;
+  border-radius: 15px;
+}
+
+.performance-inventory-card img {
+  position: absolute;
+  display: block;
+  height: auto;
+  width: 410px;
+}
+
+.performance-inventory-card h2 {
+  margin-bottom: 400px;
+}
+
+.performance-inventory-card-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 470px;
+  width: 470px;
+  border: 2px solid #F2AF29;
+  border-radius: 15px;
+}
+
+.performance-inventory-card-two img {
+  position: absolute;
+  display: block;
+  height: auto;
+  width: 440px;
+}
+
+.performance-inventory-card-two h2 {
+  margin-bottom: 400px;
+}
+
+.performance-inventory-card-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 470px;
+  width: 470px;
+  border: 2px solid #F2AF29;
+  border-radius: 15px;
+}
+
+.performance-inventory-card-three img {
+  position: absolute;
+  display: block;
+  /* height: 60%; */
+  height: 340px;
+  width: 340px;
+}
+
+.performance-inventory-card-three h2 {
+  margin-bottom: 400px;
+}
+
+.style-part-items-container{
+  width: 50%;
+  margin: 0;
+  height: 100%;
+  margin-top: 115px;
+  display: grid;
+  grid-template-columns: repeat(3, 470px);
+  gap: 7px;
+}
+
+.style-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 470px;
+  width: 470px;
+  /* border: 2px solid #AD343E; */
+  border: 2px solid black;
+  background-color: #474747;
+  border-radius: 15px;
+}
+
+.style-card img {
+  position: absolute;
+  display: block;
+  height: 75%;
+  width: 75%;
+  margin-bottom: 35px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.style-card h2 {
+  margin-bottom: 365px;
+  font-size: 19px;
+}
+
+.style-card button {
+  color: #fff;
+  background-color: #474747;
+  border: none;
+  text-decoration: none; 
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.style-card button:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+

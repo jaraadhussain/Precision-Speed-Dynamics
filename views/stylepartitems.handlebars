@@ -1,0 +1,36 @@
+{{> navbar}}
+<div class="style-part-items-container">
+    {{#if_eq category "STEERING_WHEELS"}}
+        {{#each inventory.STEERING_WHEELS}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "BODY_PARTS"}}
+        {{#each inventory.BODY_PARTS}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "AIR_FRESHNERS"}}
+        {{#each inventory.AIR_FRESHNERS}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+</div>

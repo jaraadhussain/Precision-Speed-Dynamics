@@ -3,9 +3,9 @@
     "styling_parts": {
       "items": {
         "STEERING_WHEELS": [
-          {"key": 1, "name": "BMW F80 M3 CARBON FIBER WHEEL", "quantity": 3, "img": "https://www.carbonlyy.com/cdn/shop/products/B0D85678-0419-48AF-B1A0-2A87919087F1_1024x1024.jpg?v=1666114760"},
-          {"key": 2, "name": "AUDI B9 S4 CARBON FIBER LED WHEEL", "quantity": 3, "img": "https://jaliscoscarbonfiber.com/cdn/shop/products/IMG_20201118_085946_495.jpg?v=1643319344"},
-          {"key": 3, "name": "BMW G20 M PERFORMANCE ALCANTARA WHEEL", "quantity": 3, "img": "https://preview.redd.it/ngyv3c5zvwj51.jpg?width=640&crop=smart&auto=webp&s=bc1688a9928fed23999a90e24b3c553536cdbbd8"}
+          {"key": 1, "name": "BMW F80 M3 CARBON FIBER WHEEL", "quantity": 3, "price": "$400", "img": "https://www.carbonlyy.com/cdn/shop/products/B0D85678-0419-48AF-B1A0-2A87919087F1_1024x1024.jpg?v=1666114760"},
+          {"key": 2, "name": "AUDI B9 S4 CARBON FIBER LED WHEEL", "quantity": 3, "price": "$650", "img": "https://jaliscoscarbonfiber.com/cdn/shop/products/IMG_20201118_085946_495.jpg?v=1643319344"},
+          {"key": 3, "name": "BMW G20 M PERFORMANCE ALCANTARA WHEEL", "quantity": 3, "price": "$500", "img": "https://preview.redd.it/ngyv3c5zvwj51.jpg?width=640&crop=smart&auto=webp&s=bc1688a9928fed23999a90e24b3c553536cdbbd8"}
         ],
         "BODY_PARTS": [
           {"key": 1, "name": "BMW M3 HIGH KICK CARBON FIBER TRUNK SPOILER", "quantity": 5, "img": "https://bimmerplug.com/cdn/shop/products/PSM-Style-High-Kick-Carbon-Fiber-Trunk-Spoiler-BMW-F80-M3-F30-3-Series.jpg?v=1673238394&width=1024"},
@@ -22,18 +22,18 @@
     "performance_parts": {
       "items": {
         "DOWNPIPES": [
-          {"key": 1, "name": "VRSF B58 Downpipe Upgrade 2016+ BMW M240i/340i/440i/540i/740i & xDrive", "quantity": 3, "img": "https://www.vr-speed.com/wp-content/uploads/2017/01/VRSF_10582010-800x544.jpg"},
+          {"key": 1, "name": "VRSF B58 Downpipe Upgrade 2016+ BMW M240i/340i/440i xDrive", "quantity": 3, "img": "https://www.vr-speed.com/wp-content/uploads/2017/01/VRSF_10582010-800x544.jpg"},
           {"key": 2, "name": "APR CAST DOWNPIPE FOR 2.0T AWD MODELS ", "quantity": 3, "img": "https://store.ngpracing.com/cdn/shop/products/apr-dpk0021-upper-section-downturn_1024x1024.jpg?v=1683647409"},
           {"key": 3, "name": "ARMYTRIX HIGH-FLOW PERFORMANCE RACE DOWNPIPE FOR C43 AMG", "quantity": 3, "img": "https://www.turbokits.com/media/catalog/product/cache/ff25758155996d4daf5ccf351bb6b465/P/i/Pi9l1DId07ThLnc43dparmytrix.webp"}
         ],
         "EXHAUSTS": [
-          {"key": 1, "name": "Valvetronic BMW G20/G22 M340i/M440i Valved Sport Exhaust System", "quantity": 3, "img": "https://valvetronic.com/cdn/shop/files/A7404171.jpg?v=1697642437&width=1206"},
-          {"key": 2, "name": "MillTek Audi B9 Non-Resonated Cat-Back Exhaust System", "quantity": 3, "img": "https://www.mlperformanceusa.com/cdn/shop/products/MillTek_Audi_Non-Resonated_Cat-Back_Exhaust_System-_edited_1_b934061b-4aa4-45b9-865d-5839d29339b8.jpg?v=1689077391&width=990"},
-          {"key": 3, "name": "AWE TUNING PORSCHE 991 SWITCHPATH EXHAUST", "quantity": 3, "img": "https://awe-tuning.com/cdn/shop/products/awe_991s_switchpath_exhaust_1280.jpg?v=1650239499"}
+          {"key": 1, "name": "Valvetronic BMW G20/G22 M340i/M440i Valved Sport Exhaust System", "short_name": "Valvetronic BMW G20/G22 M340i/M440i", "quantity": 3, "img": "https://valvetronic.com/cdn/shop/files/A7404171.jpg?v=1697642437&width=1206"},
+          {"key": 2, "name": "MillTek Audi B9 Non-Resonated Cat-Back Exhaust System", "short_name": "MillTek Audi B9 Non-Resonated", "quantity": 3, "img": "https://www.mlperformanceusa.com/cdn/shop/products/MillTek_Audi_Non-Resonated_Cat-Back_Exhaust_System-_edited_1_b934061b-4aa4-45b9-865d-5839d29339b8.jpg?v=1689077391&width=990"},
+          {"key": 3, "name": "AWE TUNING PORSCHE 991 SWITCHPATH EXHAUST","short_name": "AWE TUNING PORSCHE 991 SWITCHPATH EXHAUST", "quantity": 3, "img": "https://awe-tuning.com/cdn/shop/products/awe_991s_switchpath_exhaust_1280.jpg?v=1650239499"}
         ],
         "TURBO_KITS": [
           {"key": 1, "name": "BIGBOOST B58 EFR TURBO KIT", "quantity": 2, "img": "https://bigboostturbo.com/cdn/shop/products/EFRB58_720x.jpg?v=1622937039"},
-          {"key": 2, "name": "TTE700 UPGRADED TURBOCHARGER FOR AUDI RS3", "quantity": 2, "img": "https://assets.uspmotorsports.com/zsmxyc/800/600/resize/commerce/assets/_default_upload_bucket/image%20(38).jpg"},
+          {"key": 2, "name": "TTE700 TURBOCHARGER FOR AUDI RS3", "quantity": 2, "img": "https://assets.uspmotorsports.com/zsmxyc/800/600/resize/commerce/assets/_default_upload_bucket/image%20(38).jpg"},
           {"key": 3, "name": "PRECISION TURBO GEN 2 PT6066", "quantity": 2, "img": "https://www.precisionturbo.com/images/365724-4537x3025/21104210219-1.jpg"}
         ]
       }

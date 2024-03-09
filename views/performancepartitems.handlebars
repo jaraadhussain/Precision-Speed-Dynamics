@@ -1,0 +1,35 @@
+{{> navbar}}
+<div class="style-part-items-container">
+    {{#if_eq category "DOWNPIPES"}}
+        {{#each inventory.DOWNPIPES}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "EXHAUSTS"}}
+        {{#each inventory.EXHAUSTS}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{short_name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "TURBO_KITS"}}
+        {{#each inventory.TURBO_KITS}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+</div>

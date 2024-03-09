@@ -1,24 +1,31 @@
 {{> navbar}}
 <div class="style-inventory">
-    <div class="style-inventory-card">
-        {{#with inventory.car_inventory.styling_parts.items.STEERING_WHEELS}}
-            <h2>STEERING WHEELS</h2>
-            {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
-            <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
-        {{/with}}
-    </div>
-    <div class="style-inventory-card-two">
-        {{#with inventory.car_inventory.styling_parts.items.BODY_PARTS}}
-            <h2>BODY PARTS</h2>
-            {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
-            <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
-        {{/with}}
-    </div>
-    <div class="style-inventory-card3">
-        {{#with inventory.car_inventory.styling_parts.items.AIR_FRESHNERS}}
-            <h2>AIR FRESHNERS</h2>
-            {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
-            <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
-        {{/with}}
-    </div>
+    <a href="/stylepartitems?category=STEERING_WHEELS">
+        <div class="style-inventory-card">
+            {{#with inventory.car_inventory.styling_parts.items.STEERING_WHEELS}}
+                <h2>STEERING WHEELS</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+            
+        </div>
+    </a>
+    <a href="/stylepartitems?category=BODY_PARTS">
+        <div class="style-inventory-card-two">
+            {{#with inventory.car_inventory.styling_parts.items.BODY_PARTS}}
+                <h2>BODY PARTS</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
+    <a href="/stylepartitems?category=AIR_FRESHNERS">
+        <div class="style-inventory-card-three">
+            {{#with inventory.car_inventory.styling_parts.items.AIR_FRESHNERS}}
+                <h2>AIR FRESHNERS</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
 </div>

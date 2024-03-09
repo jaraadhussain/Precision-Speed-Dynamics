@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+
+
+/* Overall Webstie Body */
+body {
+  background-color: #000000;
+  font-family: 'Anta', sans-serif;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
