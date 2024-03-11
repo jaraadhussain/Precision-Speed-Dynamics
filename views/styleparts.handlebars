@@ -10,10 +10,37 @@
             
         </div>
     </a>
-    <a href="/stylepartitems?category=BODY_PARTS">
+    <a href="/stylepartitems?category=SPOILERS">
         <div class="style-inventory-card-two">
-            {{#with inventory.car_inventory.styling_parts.items.BODY_PARTS}}
-                <h2>BODY PARTS</h2>
+            {{#with inventory.car_inventory.styling_parts.items.SPOILERS}}
+                <h2>SPOILERS</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
+    <a href="/stylepartitems?category=DIFFUSERS">
+        <div class="style-inventory-card-two">
+            {{#with inventory.car_inventory.styling_parts.items.DIFFUSERS}}
+                <h2>DIFFUSERS</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
+    <a href="/stylepartitems?category=LIPS_SIDE_SKIRTS">
+        <div class="style-inventory-card-two">
+            {{#with inventory.car_inventory.styling_parts.items.LIPS_SIDE_SKIRTS}}
+                <h2>LIPS/SIDE SKIRTS</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
+    <a href="/stylepartitems?category=INTERIOR_ACCESSORIES">
+        <div class="style-inventory-card-two">
+            {{#with inventory.car_inventory.styling_parts.items.INTERIOR_ACCESSORIES}}
+                <h2>INTERIOR ACCESSORIES</h2>
                 {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
                 <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
             {{/with}}

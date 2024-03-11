@@ -7,6 +7,7 @@
             <h2>{{name}}</h2>
             <p>Price: {{price}}</p>
             <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
         </div>
         {{/each}}
     {{/if_eq}}
@@ -18,6 +19,7 @@
             <h2>{{short_name}}</h2>
             <p>Price: {{price}}</p>
             <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
         </div>
         {{/each}}
     {{/if_eq}}
@@ -29,6 +31,43 @@
             <h2>{{name}}</h2>
             <p>Price: {{price}}</p>
             <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "INTAKES"}}
+        {{#each inventory.INTAKES}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "INTERCOOLERS"}}
+        {{#each inventory.INTERCOOLERS}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "TUNING"}}
+        {{#each inventory.TUNING}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
         </div>
         {{/each}}
     {{/if_eq}}

@@ -27,4 +27,31 @@
             {{/with}}
         </div>
     </a>
+    <a href="performancepartitems?category=INTAKES">
+        <div class="performance-inventory-card-three">
+            {{#with inventory.car_inventory.performance_parts.items.INTAKES}}
+                <h2>INTAKES</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
+    <a href="performancepartitems?category=INTERCOOLERS">
+        <div class="performance-inventory-card-three">
+            {{#with inventory.car_inventory.performance_parts.items.INTERCOOLERS}}
+                <h2>INTERCOOLERS</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
+    <a href="performancepartitems?category=TUNING">
+        <div class="performance-inventory-card-three">
+            {{#with inventory.car_inventory.performance_parts.items.TUNING}}
+                <h2>TUNING</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
 </div>

@@ -28,45 +28,45 @@ app.set("view engine", "handlebars");
 app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
-    res.render("index"); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("index", {inventory: inventory}); 
 });
 
 app.get("/appointments", (req, res) => {
-    res.render("appointments"); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("appointments"); 
 });
 
 app.get("/shop", (req, res) => {
-    res.render("shop", {inventory: inventory}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("shop", {inventory: inventory}); 
 });
 
 app.get("/styleparts", (req, res) => {
-    res.render("styleparts", {inventory: inventory}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("styleparts", {inventory: inventory}); 
 });
 
 app.get("/stylepartitems", (req, res) => {
     const category = req.query.category
-    res.render("stylepartitems", {inventory: inventory.car_inventory.styling_parts.items, category:category}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("stylepartitems", {inventory: inventory.car_inventory.styling_parts.items, category:category}); 
 });
 
 app.get("/performanceparts", (req, res) => {
-    res.render("performanceparts", {inventory: inventory}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("performanceparts", {inventory: inventory}); 
 });
 
 app.get("/performancepartitems", (req, res) => {
     const category = req.query.category
-    res.render("performancepartitems", {inventory: inventory.car_inventory.performance_parts.items, category:category}); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("performancepartitems", {inventory: inventory.car_inventory.performance_parts.items, category:category}); 
 });
 
 app.get("/gallery", (req, res) => {
-    res.render("gallery"); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("gallery"); 
 });
 
 app.get("/contact", (req, res) => {
-    res.render("contact"); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("contact"); 
 });
 
 app.get("/login", (req, res) => {
-    res.render("login"); // Assuming 'main' is your default layout and you have index.handlebars within the views folder if needed
+    res.render("login"); 
 });
 
 app.listen(8080, () => {

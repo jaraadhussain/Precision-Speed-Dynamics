@@ -12,13 +12,50 @@
         {{/each}}
     {{/if_eq}}
 
-    {{#if_eq category "BODY_PARTS"}}
-        {{#each inventory.BODY_PARTS}}
+    {{#if_eq category "SPOILERS"}}
+        {{#each inventory.SPOILERS}}
         <div class="style-card">
             <img src="{{img}}" alt="{{key}}">
             <h2>{{name}}</h2>
             <p>Price: {{price}}</p>
             <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "DIFFUSERS"}}
+        {{#each inventory.DIFFUSERS}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "LIPS_SIDE_SKIRTS"}}
+        {{#each inventory.LIPS_SIDE_SKIRTS}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+        {{/each}}
+    {{/if_eq}}
+
+    {{#if_eq category "INTERIOR_ACCESSORIES"}}
+        {{#each inventory.INTERIOR_ACCESSORIES}}
+        <div class="style-card">
+            <img src="{{img}}" alt="{{key}}">
+            <h2>{{name}}</h2>
+            <p>Price: {{price}}</p>
+            <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
         </div>
         {{/each}}
     {{/if_eq}}
@@ -30,6 +67,7 @@
             <h2>{{name}}</h2>
             <p>Price: {{price}}</p>
             <p>In Stock: {{quantity}}</p>
+            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
         </div>
         {{/each}}
     {{/if_eq}}

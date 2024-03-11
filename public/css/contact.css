@@ -1,0 +1,183 @@
+/* CONTACT PAGE IMAGE */
+.hero-image-two {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5bfeafebe74940786780afa1/3bee4b37-cf34-4840-b575-cc5fbb4c6495/DSC02208.jpg');
+    height: 125vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -105px;
+    position: relative;
+    z-index: -2;
+}
+
+.hero-image-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero-image-two h1 {
+    margin-top: 185px;
+    font-size: 2.7em;
+    text-transform: uppercase;
+}
+
+.hero-image-two p{
+    margin: 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+
+
+/* CONTACT FORM */
+.form-two {
+    font-family: 'Anta', sans-serif;
+    color: #fff;
+    background-color: rgba(31, 31, 31, 0.8); 
+    padding: 40px;
+    border-radius: 8px;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Ensures the form doesn't get too wide on larger screens */
+    margin: 10px auto 40px; /* Center the form horizontally, adjust margin to fit under the hero image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    position: relative; /* Ensures z-index is applied correctly */
+    z-index: 2; /* Ensures the form is above the hero image overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.form-two h2 {
+    color: #F2AF29; /* Caption color */
+    margin-bottom: 30px; /* Space below the caption */
+    text-decoration: underline;
+}
+
+.form-two .contact-name,
+.form-two .contact-email,
+.form-two .contact-ordernum,
+.form-two .contact-message {
+    width: 100%; /* Ensures input fields take the full width of the form */
+    margin-bottom: 20px;
+}
+
+.form-two label {
+    display: block;
+    margin-bottom: 8px; /* Space below the label */
+}
+
+.form-two input[type="text"],
+.form-two input[type="email"],
+.form-two textarea {
+    font-family: 'Anta', sans-serif;
+    width: 100%; /* Ensures input fields take the full width of the container */
+    padding: 12px;
+    border: 2px solid #F2AF29; /* Border color */
+    border-radius: 4px; /* Rounded borders for the input fields */
+    background-color: #252E33; /* Input field background color */
+    color: #fff; /* Text color */
+    margin-bottom: 10px; /* Space below the input fields */
+}
+
+.form-two input[type="text"]:focus,
+.form-two input[type="email"]:focus,
+.form-two textarea:focus {
+    outline: none;
+    border-color: #775511; /* Border color when the field is focused */
+}
+
+.form-two button.contactFormSubmit {
+    font-family: 'Anta', sans-serif;
+    cursor: pointer;
+    padding: 15px 30px;
+    background-color: #AD343E; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px; /* Rounded borders for the button */
+    font-size: 16px;
+    text-transform: uppercase; /* Optional: Uppercase text for the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contactFormSubmit {
+    margin-left: 110px;
+}
+
+.form-two button.contactFormSubmit:hover {
+    background-color: #481216; /* Button hover background color */
+}
+
+
+
+
+/* SHOP HOURS */
+.table-hours {
+    font-family: 'Anta', sans-serif;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Ensure the div takes full width to center the table properly */
+    grid-column: 2;
+}
+
+.shop-hours {
+    width: 105%; /* Adjust based on your preference */
+    margin-top: -500px;
+    margin-right: 20px;
+    border-collapse: collapse; /* Enable border collapsing */
+    background-color: #333; /* Background color for contrast */
+    opacity: 0.9; /* Optional: Makes the table slightly transparent */
+    border-radius: 8px; /* Optional: Adds rounded corners to the table */
+    overflow: hidden; /* Keeps the border-radius effect contained */
+}
+
+.shop-hours caption {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 15px; /* Space below the caption */
+    text-transform: uppercase;
+    color: #F2AF29; /* Caption color */
+    background-color: #222; /* Caption background for distinction */
+    padding: 10px;
+    border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+}
+
+.shop-hours th, .shop-hours td {
+    text-align: left; /* Aligns text to the left */
+    padding: 8px; /* Padding inside cells */
+    border-bottom: 2px solid #F2AF29; /* Border bottom for each cell */
+}
+
+.shop-hours th {
+    background-color: #444; /* Slightly different background for headers */
+    color: #F2AF29; /* Header text color */
+}
+
+/* Removes the border from the last row for a cleaner look */
+.shop-hours tr:last-child td {
+    border-bottom: none;
+}
+
+/* Optional: Hover effect on rows */
+.shop-hours tr:hover {
+    background-color: #555; /* Change as per your theme */
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 800px);
+}
+

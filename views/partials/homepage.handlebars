@@ -1,4 +1,35 @@
-    <div class="hero-image">
-        <h1>Welcome to Precision Speed Dynamics</h1>
-        <p>Your ultimate destination for Premium Parts and Performance</p>
-    </div>
+<div class="hero-image">
+    <h1>Welcome to Precision Speed Dynamics</h1>
+    <p>Your ultimate destination for Premium Parts and Performance</p>
+</div>
+
+<h2 class="category-header">SHOP BY CATEGORY</h2>
+<div class="home-style-inventory">
+    <a href="/stylepartitems?category=STEERING_WHEELS">
+        <div class="style-inventory-card">
+            {{#with inventory.car_inventory.styling_parts.items.STEERING_WHEELS}}
+                <h2>STEERING WHEELS</h2>
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+            
+        </div>
+    </a>
+    <a href="performancepartitems?category=EXHAUSTS">
+        <div class="performance-inventory-card-two">
+            {{#with inventory.car_inventory.performance_parts.items.EXHAUSTS}}
+                <h2>EXHAUSTS</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
+    <a href="performancepartitems?category=TUNING">
+        <div class="performance-inventory-card-three">
+            {{#with inventory.car_inventory.performance_parts.items.TUNING}}
+                <h2>TUNING</h2>
+                {{!-- <p>Quantity: {{this.[0].quantity}}</p> --}}
+                <img src="{{this.[0].img}}" alt="{{this.[0].name}}">
+            {{/with}}
+        </div>
+    </a>
+</div>

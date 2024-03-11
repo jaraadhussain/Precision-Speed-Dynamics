@@ -1,0 +1,155 @@
+.hero-image-three {
+  background-image: url('https://bimmerplug.com/cdn/shop/files/S58-Titanium-Front-Mount-Air-Intake-Kit-BMW-G80-M3-G82-G83-M4-G87-M2.jpg?crop=center&height=1200&v=1705552531&width=1200');
+  height: 125vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -105px;
+  position: relative;
+  z-index: -2;
+}
+
+.hero-image-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-image-three h1 {
+  margin-top: 185px;
+  font-size: 2.7em;
+  text-transform: uppercase;
+}
+
+.hero-image-three p{
+  margin: 0;
+  font-size: 1.0em;
+  text-transform: uppercase;
+}
+
+/* APPOINTMENT FORM */
+.form {
+  font-family: 'Anta', sans-serif;
+  color: white;
+  background-color: rgba(31, 31, 31, 0.8); 
+  padding: 40px;
+  border-radius: 8px;
+  width: 50%; 
+  max-width: 600px; 
+  margin: 40px auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h2 {
+  color: #F2AF29; /* Caption color */
+  text-decoration: underline;
+  margin-bottom: 30px; /* Space below the caption */
+  font-size: 1.5em;
+}
+
+.form p {
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #aaa;
+  text-align: center;
+}
+
+.name, .email, .make, .model, .year, .interests, .parts {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea,
+.form select {
+  font-family: 'Anta', sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #F2AF29;
+  border-radius: 4px;
+  background-color: #252E33;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus,
+.form select:focus {
+  outline: none;
+  border-color: #775511;
+}
+
+.form input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form input[type="radio"] + label {
+  margin-right: 20px;
+}
+
+.form button.apptFormSubmit {
+  font-family: 'Anta', sans-serif;
+  cursor: pointer;
+  padding: 15px 30px;
+  background-color: #AD343E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Space above the submit button */
+}
+
+.apptFormSubmit {
+  margin-left: 110px;
+}
+
+.form button.apptFormSubmit:hover {
+  background-color: #481216;
+}
+
+.customLine, .customLine2 {
+  border: none;
+  height: 2px;
+  background-color: rgba(250, 250, 250, 0.5);
+  margin: 35px auto; /* Center the lines horizontally */
+  width: 80%; /* Adjust line width as desired */
+}
+
+.parts > div {
+  margin-bottom: 20px;
+}
+
+.parts label, .parts input {
+  display: inline-block; /* Aligns the inputs and labels side by side */
+  margin-right: 10px; /* Adds some space between the radio buttons and labels */
+}
+
+.parts input[type="radio"] {
+  margin-top: 0; /* Aligns radio buttons correctly with labels */
+}
+
+
+
+
