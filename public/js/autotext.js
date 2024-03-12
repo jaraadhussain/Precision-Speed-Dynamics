@@ -1,6 +1,6 @@
-const text = "Precision Speed Dynamics "; // Text to type
-const typingSpeed = 150; // Milliseconds between each character
-let index = 0; // Starting index of the text
+const text = "Precision Speed Dynamics "; 
+const typingSpeed = 150; // ms between each character
+let index = 0; 
 
 function typeEffect() {
     if (index < text.length) {
@@ -10,4 +10,4 @@ function typeEffect() {
     }
 }
 
-window.onload = typeEffect; // Start the effect when the window loads
+window.onload = typeEffect; 

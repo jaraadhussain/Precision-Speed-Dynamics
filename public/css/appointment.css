@@ -54,9 +54,9 @@
 }
 
 .form h2 {
-  color: #F2AF29; /* Caption color */
+  color: #F2AF29; 
   text-decoration: underline;
-  margin-bottom: 30px; /* Space below the caption */
+  margin-bottom: 30px; 
   font-size: 1.5em;
 }
 
@@ -118,7 +118,7 @@
   font-size: 16px;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
-  margin-top: 20px; /* Space above the submit button */
+  margin-top: 20px; 
 }
 
 .apptFormSubmit {
@@ -133,8 +133,8 @@
   border: none;
   height: 2px;
   background-color: rgba(250, 250, 250, 0.5);
-  margin: 35px auto; /* Center the lines horizontally */
-  width: 80%; /* Adjust line width as desired */
+  margin: 35px auto; 
+  width: 80%; 
 }
 
 .parts > div {
@@ -142,12 +142,12 @@
 }
 
 .parts label, .parts input {
-  display: inline-block; /* Aligns the inputs and labels side by side */
-  margin-right: 10px; /* Adds some space between the radio buttons and labels */
+  display: inline-block; 
+  margin-right: 10px; 
 }
 
 .parts input[type="radio"] {
-  margin-top: 0; /* Aligns radio buttons correctly with labels */
+  margin-top: 0; 
 }
 
 

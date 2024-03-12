@@ -61,7 +61,7 @@
 .footer-container {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px; /* Adjust the max width as needed */
+    max-width: 1200px; 
     margin: auto;
     padding: 0 20px;
 }
@@ -78,12 +78,12 @@
     display: block;
     color: #aaa;
     text-decoration: none;
-    margin-bottom: 10px; /* Adjust the space between links */
-    font-size: 14px; /* Smaller font size for a more compact look */
+    margin-bottom: 10px; 
+    font-size: 14px;
 }
 
 .footer-section a:hover {
-    text-decoration: underline; /* Optional hover effect */
+    text-decoration: underline;
 }
 
 /* Responsive adjustments */
