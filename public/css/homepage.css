@@ -39,6 +39,18 @@
     text-transform: uppercase;
 }
 
+/* Add a cursor effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#typed-text {
+    border-right: 3px solid;
+    animation: blink 0.75s step-end infinite;
+}
+
 .site-footer {
     background-color: #1b1b1b;
     color: #fff;

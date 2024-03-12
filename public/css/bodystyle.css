@@ -10,22 +10,19 @@ body {
 
 /* Customizes the whole scrollbar */
 ::-webkit-scrollbar {
-    width: 8px; /* Adjust the width of the scrollbar */
+    width: 8px; 
     height: 8px;
 }
 
-/* Customizes the background of the scrollbar track */
 ::-webkit-scrollbar-track {
-    background: rgb(20, 20, 20); /* Light grey track background */
+    background: rgb(20, 20, 20); 
 }
 
-/* Customizes the scrollbar handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; /* Dark grey scrollbar handle */
-    border-radius: 6px; /* Optional: Rounds the corners of the scrollbar thumb */
+    background: #888; 
+    border-radius: 6px; 
 }
 
-/* Customizes the scrollbar handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Darker grey on hover */
+    background: #555; 
 }
